@@ -561,7 +561,7 @@ section .point li.two {
 }
 .stats .contanier .box h1 {
   font-size: 50px;
-  margin:  20px;
+  margin:  20px 0;
 }
 .stats .contanier .box p {
   font-weight: 300;
