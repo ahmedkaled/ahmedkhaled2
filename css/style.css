@@ -2,7 +2,7 @@
 :root {
   --man-color: #19c8fa;
   --sacondery-color: rgb(15 116 143 / 70%);
-  --header-color: #777777;
+  --header-color: #777;
   --main-padding: 60px;
 }
 /* end viurable */
@@ -331,7 +331,7 @@ section .point li.two {
 .design .image {
   text-align: center;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .image {
     display: none;
   }
@@ -385,16 +385,15 @@ section .point li.two {
   margin-top: var(--main-padding);
 }
 .portfolio .images-prtfolio .box {
- position: relative;
- overflow: hidden;
-
+  position: relative;
+  overflow: hidden;
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .portfolio .images-prtfolio .box {
     flex-basis: 50%;
   }
 }
-@media (min-width:1199px) {
+@media (min-width: 1199px) {
   .portfolio .images-prtfolio .box {
     flex-basis: 25%;
   }
@@ -405,13 +404,12 @@ section .point li.two {
 }
 .portfolio .images-prtfolio .box .caption {
   padding: 20px;
-  transition:0.3s;
+  transition: 0.3s;
   left: 0;
   position: absolute;
   width: 100%;
   bottom: -100%;
   background-color: white;
-
 }
 .portfolio .images-prtfolio .box .caption h4 {
   font-weight: normal;
@@ -424,7 +422,7 @@ section .point li.two {
   bottom: 0;
 }
 .portfolio .images-prtfolio .box:hover img {
-  transform: rotate(3deg)scale(1.1);
+  transform: rotate(3deg) scale(1.1);
 }
 
 .portfolio .more {
@@ -446,17 +444,16 @@ section .point li.two {
   position: relative;
 }
 .video::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color:rgba(0, 0, 0, 0.397);
+  background-color: rgba(0, 0, 0, 0.397);
   left: 0;
   top: 0;
-
 }
 .video video {
- max-width: 100%;
+  max-width: 100%;
 }
 .video .text {
   position: absolute;
@@ -472,7 +469,7 @@ section .point li.two {
 .video .text h4 {
   font-size: 25px;
   font-weight: normal;
-  margin: 0 0  30px;
+  margin: 0 0 30px;
 }
 .video .text p {
   margin-bottom: 30px;
@@ -499,7 +496,7 @@ section .point li.two {
   margin-top: -120px;
   max-width: 100%;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .about .contanier img {
     bottom: -60px;
     margin-top: -60px;
@@ -513,7 +510,7 @@ section .point li.two {
   text-align: center;
   background-image: url(../images/see.jpg);
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   position: relative;
 }
 .stats::after {
@@ -526,45 +523,201 @@ section .point li.two {
   height: 100%;
 }
 .stats .contanier {
- position: relative;
- z-index: 3;
- display: flex;
- flex-wrap: wrap;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
 }
 .stats .contanier .box {
   color: white;
   padding: 50px;
   background-color: var(--sacondery-color);
-
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .stats .contanier .box {
     flex-basis: 100%;
   }
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .stats .contanier .box {
     flex-basis: 50%;
   }
 }
-@media (min-width:992px) {
+@media (min-width: 992px) {
   .stats .contanier .box {
     flex-basis: 25%;
   }
 }
 
 .stats .contanier .box i {
-  font-size: 15px ;
+  font-size: 15px;
   background-color: black;
   padding: 10px;
   border-radius: 50%;
 }
 .stats .contanier .box h1 {
   font-size: 50px;
-  margin:  20px 0;
+  margin: 20px 0;
 }
 .stats .contanier .box p {
   font-weight: 300;
   font-size: 15px;
 }
 /* End stats */
+/*Start Our skills */
+.our-skills {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.our-skills .contanier {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px) {
+  .our-skills .contanier > div {
+    flex-basis: 45%;
+  }
+}
+.our-skills .contanier > div > h4 {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+}
+.our-skills .contanier > div > p {
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--header-color);
+}
+/* Start testmonials */
+.our-skills .contanier .testmonials .content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-left: 0;
+}
+.our-skills .contanier .testmonials .content {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.our-skills .contanier .testmonials .content .text {
+  line-height: 1.8;
+  width: 100%;
+  /* border-bottom: 1px solid gray; */
+}
+.our-skills .contanier .testmonials .content .text p {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  color: var(--header-color);
+  font-size: 15px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+}
+.our-skills .contanier .testmonials ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.our-skills .contanier .testmonials ul li {
+  border: 1px solid #777;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+}
+.our-skills .contanier .testmonials ul li.active {
+  background-color: var(--man-color);
+  border-color: var(--man-color);
+}
+
+/* End testmonials */
+
+/* Start skills */
+.skills .pro-holder h4 {
+  padding: 0 0 20px;
+  margin-bottom: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.skills .pro-holder .prog {
+  background-color: #ccc;
+  position: relative;
+  height: 30px;
+  width: 100%;
+  bottom: 48px;
+}
+.skills .pro-holder .prog span {
+  position: absolute;
+  background-color: var(--man-color);
+  height: 30px;
+}
+.skills .pro-holder .prog span::after {
+  content: attr(data-progrees);
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -38px;
+  right: -20px;
+}
+.skills .pro-holder .prog span::before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+/* End skills */
+/*End Our skills */
+/* sTART photo-section */
+.photo-section {
+  background-image: url(../images/5.jpg);
+  background-size: cover;
+  padding: 100px 120px;
+  text-align: center;
+  background-position: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.photo-section::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -5;
+}
+.photo-section .info h2 {
+  font-size: 28px;
+  font-weight: normal;
+}
+.photo-section .info p {
+  margin-top: 30px;
+}
+/* END photo-section */
+/* Start racing */
+.racing {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+/* End Racing */
